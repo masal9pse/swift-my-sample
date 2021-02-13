@@ -50,6 +50,14 @@
                                     <action selector="back:" destination="E00-uL-L4s" eventType="touchUpInside" id="WE0-Ua-WeZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kco-pD-EEW">
+                                <rect key="frame" x="158" y="610" width="79" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="backOne:" destination="E00-uL-L4s" eventType="touchUpInside" id="u0w-S1-cmn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ofR-cl-6CP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

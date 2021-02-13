@@ -6,6 +6,9 @@
 //
 
 import UIKit
+protocol catchProtrol {
+    func catchData(data: String)
+}
 
 class RegistCheckViewController: UIViewController {
     var mainValue = MainValue()
@@ -35,6 +38,11 @@ class RegistCheckViewController: UIViewController {
         let mainVc = storyboard.instantiateViewController(withIdentifier: "mainpage") as! ViewController
         mainVc.modalPresentationStyle = .fullScreen
         self.present(mainVc, animated: true, completion: nil)
+    }
+    
+    
+    @IBAction func backOne(_ sender: Any) {
+       dismiss(animated: true, completion: nil)
     }
     /*
      // MARK: - Navigation
