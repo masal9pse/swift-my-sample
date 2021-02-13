@@ -92,6 +92,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		280F2DE925D8704C005953F9 /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				28BDBE1025D6CD2B00581531 /* Main.storyboard */,
+				28BDBE4625D6CE5800581531 /* Second.storyboard */,
+				28BDBE5325D6CFC000581531 /* RegistCheck.storyboard */,
+				28BDBE5825D6CFF700581531 /* Regist.storyboard */,
+			);
+			path = Practice;
+			sourceTree = "<group>";
+		};
+		280F2DEA25D87074005953F9 /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				28BDBE0E25D6CD2B00581531 /* ViewController.swift */,
+				28BDBE4B25D6CE6C00581531 /* SecondViewController.swift */,
+				28BDBE5D25D6D09500581531 /* RegistViewController.swift */,
+				28BDBE6525D6D0A900581531 /* RegistCheckViewController.swift */,
+			);
+			path = Practice;
+			sourceTree = "<group>";
+		};
+		280F2DEE25D87089005953F9 /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				280BC4D025D817F400A32672 /* MainValue.swift */,
+				280BC4D525D81A6B00A32672 /* SecondValue.swift */,
+			);
+			path = Practice;
+			sourceTree = "<group>";
+		};
 		28BDBDFE25D6CD2A00581531 = {
 			isa = PBXGroup;
 			children = (
@@ -147,8 +178,7 @@
 		28BDBE3D25D6CD4500581531 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				280BC4D025D817F400A32672 /* MainValue.swift */,
-				280BC4D525D81A6B00A32672 /* SecondValue.swift */,
+				280F2DEE25D87089005953F9 /* Practice */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -156,10 +186,7 @@
 		28BDBE3E25D6CD4E00581531 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				28BDBE0E25D6CD2B00581531 /* ViewController.swift */,
-				28BDBE4B25D6CE6C00581531 /* SecondViewController.swift */,
-				28BDBE5D25D6D09500581531 /* RegistViewController.swift */,
-				28BDBE6525D6D0A900581531 /* RegistCheckViewController.swift */,
+				280F2DEA25D87074005953F9 /* Practice */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -167,10 +194,7 @@
 		28BDBE3F25D6CD5E00581531 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				28BDBE1025D6CD2B00581531 /* Main.storyboard */,
-				28BDBE4625D6CE5800581531 /* Second.storyboard */,
-				28BDBE5325D6CFC000581531 /* RegistCheck.storyboard */,
-				28BDBE5825D6CFF700581531 /* Regist.storyboard */,
+				280F2DE925D8704C005953F9 /* Practice */,
 				28BDBE1325D6CD2E00581531 /* Assets.xcassets */,
 			);
 			path = Views;
