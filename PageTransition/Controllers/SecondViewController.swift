@@ -7,9 +7,10 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController,CatchProtrol {
     @IBOutlet weak var secondTextField: UITextField!
     @IBOutlet weak var fileNameField: UITextField!
+    @IBOutlet weak var backSecondTextLabel: UILabel!
     // 構造体の定義
     var mainValue = MainValue()
     var secondValue = SecondValue()
@@ -17,6 +18,10 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    func catchData(data: String) {
+        backSecondTextLabel.text = data
     }
     
     @IBAction func backToMain(_ sender: Any) {
@@ -31,5 +36,6 @@ class SecondViewController: UIViewController {
         registCheckVc.secondValue.secondDetail = secondTextField.text ?? ""
         registCheckVc.secondValue.secondFile = fileNameField.text ?? ""
         self.present(registCheckVc, animated: true, completion: nil)
+        registCheckVc.delegate = self
     }
 }

@@ -40,6 +40,8 @@ class RegistCheckViewController: UIViewController {
     
     
     @IBAction func backOne(_ sender: Any) {
+       // デリゲートメソッドを任せたクラスで発動させる
+       delegate?.catchData(data: secondValue.secondDetail)
        dismiss(animated: true, completion: nil)
     }
     /*
