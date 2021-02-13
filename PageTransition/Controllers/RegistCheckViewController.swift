@@ -6,26 +6,24 @@
 //
 
 import UIKit
-protocol catchProtrol {
+protocol CatchProtrol {
     func catchData(data: String)
 }
 
 class RegistCheckViewController: UIViewController {
     var mainValue = MainValue()
     var secondValue = SecondValue()
-//    var registCheckArg = String()
-//    var secondDetail = String()
-//    var secondFile = String()
-    
+
+    var delegate: CatchProtrol?
     @IBOutlet weak var mainLable: UILabel!
     @IBOutlet weak var secondDetailLabel: UILabel!
     @IBOutlet weak var secondFileLable: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        mainLable.text = mainValue.mainText
-        secondDetailLabel.text = secondValue.secondDetail
-        secondFileLable.text = secondValue.secondFile
+        mainLable?.text = mainValue.mainText
+        secondDetailLabel?.text = secondValue.secondDetail
+        secondFileLable?.text = secondValue.secondFile
         // Do any additional setup after loading the view.
     }
     
