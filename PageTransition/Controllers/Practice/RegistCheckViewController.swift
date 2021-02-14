@@ -19,6 +19,8 @@ class RegistCheckViewController: UIViewController {
     @IBOutlet weak var secondDetailLabel: UILabel!
     @IBOutlet weak var secondFileLable: UILabel!
     
+    // このメソッドの中でブレークポイントを置くと遷移元のボタンをクリックすると
+    // 遷移先であるこのページ遷移できず、カッコ内で定義した変数の値も取得できなかった。つまりこのメソッドはカッコの中が全て処理されてから初めて直接実行される。
     override func viewDidLoad() {
         super.viewDidLoad()
         mainLable?.text = mainValue.mainText

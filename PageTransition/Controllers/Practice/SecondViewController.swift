@@ -22,6 +22,7 @@ class SecondViewController: UIViewController,CatchProtrol {
     
     func catchData(data: String) {
         backSecondTextLabel.text = data
+        print(backSecondTextLabel.text ?? "")
     }
     
     @IBAction func backToMain(_ sender: Any) {
