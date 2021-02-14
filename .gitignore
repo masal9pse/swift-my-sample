@@ -1,0 +1,3 @@
+.DS_Store
+*.swp // これも指定しておくと便利
+PageTransition.xcodeproj/project.xcworkspace/xcuserdata/yamamotohiroto.xcuserdatad/UserInterfaceState.xcuserstate
